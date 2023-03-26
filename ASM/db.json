@@ -1,0 +1,333 @@
+{
+  "categories": [
+    {
+      "id": "57fe5d5efc54",
+      "name": "Đồ nam"
+    },
+    {
+      "id": "57fe5d5efc51",
+      "name": "Đồ nữ"
+    },
+    {
+      "id": "57fe5d5efc55",
+      "name": "Áo thun"
+    },
+    {
+      "id": "57fe5d5efc57",
+      "name": "Áo khoác"
+    },
+    {
+      "name": "Váy",
+      "id": "57fe5d5efc58"
+    },
+    {
+      "name": "Đồ đôi",
+      "id": "eJWC4lT"
+    },
+    {
+      "name": "Đồ 2 hand",
+      "id": "eJWC41lT"
+    },
+    {
+      "name": "Đồ unisex nam",
+      "id": "eJWC41lT1"
+    },
+    {
+      "name": "Đồ unisex nữ",
+      "id": "eJWC41lT2"
+    }
+  ],
+  "product": [
+    {
+      "id": "55fe5d5efc52",
+      "name": "Váy 3",
+      "price": 120,
+      "quantity": 12,
+      "img": "pexels-evg-kowalievska-1126993.jpg",
+      "categoryId": "eJWC41lT2"
+    },
+    {
+      "id": "55fe5d5efc53",
+      "name": "Váy 4",
+      "price": 12,
+      "quantity": 12,
+      "img": "pexels-photo-1926843.jpeg",
+      "categoryId": "57fe5d5efc58"
+    },
+    {
+      "id": "55fe5d5",
+      "name": "Váy alexander",
+      "price": 210,
+      "quantity": 12,
+      "img": "pexels-alexander-daoud-3171673.jpg",
+      "categoryId": "eJWC41lT2"
+    },
+    {
+      "id": "55fe5d6",
+      "name": "Váy alex-green",
+      "price": 199,
+      "quantity": 12,
+      "img": "pexels-alex-green-6626075.jpg",
+      "categoryId": "eJWC41lT"
+    },
+    {
+      "name": "Đồ đôi xpturing-souls",
+      "price": 399,
+      "quantity": 12,
+      "img": "pexels-cxpturing-souls-3014808.jpg",
+      "categoryId": "eJWC4lT",
+      "id": "55fe5d7"
+    },
+    {
+      "id": "55fe5d8",
+      "name": "Set jeandaniel-francoeur",
+      "price": 399,
+      "quantity": 12,
+      "img": "pexels-jeandaniel-francoeur-9471910.jpg",
+      "categoryId": "57fe5d5efc58"
+    },
+    {
+      "id": "55fe5d9",
+      "name": "Set mike-jones",
+      "price": 399,
+      "quantity": 12,
+      "img": "pexels-mike-jones-9461766.jpg",
+      "categoryId": "57fe5d5efc58"
+    },
+    {
+      "id": "55fe5d10",
+      "name": "Set olena-neva",
+      "price": 399,
+      "quantity": 12,
+      "img": "pexels-olena-neva-1021709.jpg",
+      "categoryId": "eJWC41lT"
+    },
+    {
+      "id": "55fe5d11",
+      "name": "Set mike-jones",
+      "price": 499,
+      "quantity": 12,
+      "img": "pexels-mike-jones-9461766.jpg",
+      "categoryId": "57fe5d5efc58"
+    },
+    {
+      "id": "55fe5d12",
+      "name": "Set đồ nam",
+      "price": 399,
+      "quantity": 12,
+      "img": "pexels-photo-1964970.jpeg",
+      "categoryId": "57fe5d5efc55"
+    },
+    {
+      "id": "55fe5d13",
+      "name": "Set sumit-kapoor",
+      "price": 899,
+      "quantity": 12,
+      "img": "pexels-sumit-kapoor-605206.jpg",
+      "categoryId": "57fe5d5efc58"
+    },
+    {
+      "id": "55fe5d5efc54",
+      "name": "Váy 5",
+      "price": 20,
+      "quantity": 12,
+      "img": "pexels-photo-2043590.jpeg",
+      "categoryId": "57fe5d5efc55"
+    },
+    {
+      "id": "55fe5d5efc55",
+      "name": "Váy 6",
+      "price": 99,
+      "quantity": 12,
+      "img": "pexels-photo-2235071.jpeg",
+      "categoryId": "57fe5d5efc58"
+    },
+    {
+      "id": "55fe5d5efc56",
+      "name": "Váy 7",
+      "price": 55,
+      "quantity": 12,
+      "img": "pexels-photo-1848471.jpeg",
+      "categoryId": "eJWC41lT1"
+    },
+    {
+      "id": "55fe5d5efc57",
+      "name": "Set quần áo 1",
+      "price": 231,
+      "quantity": 10,
+      "img": "pexels-photo-15336688.jpeg",
+      "categoryId": "57fe5d5efc51"
+    },
+    {
+      "id": "55fe5d5efc58",
+      "name": "Set quần áo 2",
+      "price": 4654,
+      "quantity": 10,
+      "img": "pexels-photo-2726161.jpeg",
+      "categoryId": "57fe5d5efc57"
+    },
+    {
+      "id": "55fe5d5efc59",
+      "name": "Set quần áo 3",
+      "price": 778,
+      "quantity": 10,
+      "img": "pexels-alteredsnaps-15130803.jpg",
+      "categoryId": "57fe5d5efc51"
+    },
+    {
+      "id": "55fe5d5efc06",
+      "name": "Set quần áo 4",
+      "price": 544,
+      "quantity": 10,
+      "img": "pexels-mike-jones-9461766.jpg",
+      "categoryId": "57fe5d5efc54"
+    },
+    {
+      "id": "55fe5d5efc07",
+      "name": "Set quần áo 5",
+      "price": 588,
+      "quantity": 10,
+      "img": "pexels-photo-5273731.jpeg",
+      "categoryId": "57fe5d5efc57"
+    },
+    {
+      "id": "55fe5d5efc08",
+      "name": "Set quần áo 6",
+      "price": 333,
+      "quantity": 10,
+      "img": "pexels-atef-khaled-1726473.jpg",
+      "categoryId": "57fe5d5efc54"
+    },
+    {
+      "id": "55fe5d5efc09",
+      "name": "Set quần áo 7",
+      "price": 349,
+      "quantity": 10,
+      "img": "pexels-tima-miroshnichenko-5951931.jpg",
+      "categoryId": "57fe5d5efc54"
+    },
+    {
+      "id": "55fe5d5efc10",
+      "name": "Set quần áo 9",
+      "price": 379,
+      "quantity": 10,
+      "img": "pexels-victoria-akvarel-1620801.jpg",
+      "categoryId": "57fe5d5efc54"
+    },
+    {
+      "id": "55fe5d5efc11",
+      "name": "Set quần áo 10",
+      "price": 390,
+      "quantity": 10,
+      "img": "pexels-v-o-y-t-a-4025628.jpg",
+      "categoryId": "57fe5d5efc54"
+    },
+    {
+      "id": "55fe5d5ef",
+      "name": "Set quần áo 10",
+      "price": 390,
+      "quantity": 10,
+      "img": "pexels-polina-tankilevitch-4723549.jpg",
+      "categoryId": "57fe5d5efc54"
+    }
+  ],
+  "users": [
+    {
+      "id": "11fe5d5efc01",
+      "username": "hanhlt",
+      "password": "222222",
+      "address": "Ha Noi",
+      "phoneNumber": "0233412367",
+      "role": 0
+    },
+    {
+      "id": "11fe5d5efc03",
+      "username": "hanhlt107",
+      "password": "444444",
+      "address": "Ha Noi",
+      "phoneNumber": "0233412368",
+      "role": 0
+    },
+    {
+      "username": "Le_Thi_Hanh",
+      "password": "111111",
+      "role": 1,
+      "id": "g8k1bNq",
+      "address": "Ha Noi",
+      "phoneNumber": "0233412369"
+    },
+    {
+      "username": "hanhlt66",
+      "password": "666666",
+      "address": "dfsg",
+      "phoneNumber": "0982138899",
+      "role": 1,
+      "id": "84FBmNi"
+    }
+  ],
+  "orderDetails": [
+    {
+      "name": "vay2",
+      "price": 5000,
+      "quantity": 2,
+      "img": "pexels-photo-5273731.jpeg",
+      "id": "WtX4et46767"
+    },
+    {
+      "name": "vay3",
+      "price": 5000,
+      "quantity": 1,
+      "img": "pexels-olena-neva-1021709.jpg",
+      "id": "WtX4et46766"
+    },
+    {
+      "id": "WtX4et46767",
+      "name": "Set sumit-kapoor",
+      "price": 899,
+      "quantity": 1,
+      "img": "pexels-sumit-kapoor-605206.jpg"
+    },
+    {
+      "id": "WtX4et46768",
+      "name": "Set sumit-kapoor",
+      "price": 899,
+      "quantity": 1,
+      "img": "pexels-freestocksorg-291762.jpg"
+    },
+    {
+      "id": "WtX4et46769",
+      "name": "Set sumit-kapoor",
+      "price": 899,
+      "quantity": 1,
+      "img": "pexels-monstera-7139525.jpg"
+    },
+    {
+      "name": "Váy 4",
+      "price": 12,
+      "quantity": 1,
+      "img": "pexels-photo-1926843.jpeg",
+      "id": "qau3UL0"
+    },
+    {
+      "name": "Set quần áo 3",
+      "price": 778,
+      "quantity": 1,
+      "img": "pexels-alteredsnaps-15130803.jpg",
+      "id": "90mx37r"
+    },
+    {
+      "name": "Set quần áo 6",
+      "price": 333,
+      "quantity": 1,
+      "img": "pexels-atef-khaled-1726473.jpg",
+      "id": "Kn-IILO"
+    },
+    {
+      "name": "Đồ đôi xpturing-souls",
+      "price": 399,
+      "quantity": 1,
+      "img": "pexels-cxpturing-souls-3014808.jpg",
+      "id": "uPQeq6B"
+    }
+  ]
+}

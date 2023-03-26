@@ -1,0 +1,61 @@
+<div class="container">
+  <h2 class="text-center">Shopping Cart</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">STT</th>
+        <th scope="col">ID</th>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Function</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr ng-repeat="x in listOrderDetail">
+        <th>{{$index}}</th>
+        <td>{{x.id}}</td>
+        <td>
+          <img src="../assets/{{x.img}}" class="anh_product_manage" />
+        </td>
+        <td>{{x.name}}</td>
+        <td>${{x.price}}</td>
+        <td>
+          <!-- <input type="number" /> -->
+          {{x.quantity}}
+        </td>
+        <td>
+          <button class="btn btn-sm" title="delete">
+            <a
+              href="#product-manage/delete/{{x.id}}"
+              ng-click="delete($event, $index)"
+            >
+              <i class="fa fa-trash fa-lg"></i>
+            </a>
+          </button>
+        </td>
+        <td>${{x.price * x.quantity}}</td>
+      </tr>
+      <tr>
+        <td colspan="7">
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button
+              class="btn btn-success"
+              type="button"
+              ng-click="tinhTong();"
+            >
+              Tổng tiền
+            </button>
+          </div>
+        </td>
+        <td>${{tong}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-success">
+    <i class="fa fa-shopping-cart"></i>
+    Mua hàng
+  </button>
+</div>

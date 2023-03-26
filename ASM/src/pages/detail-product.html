@@ -1,0 +1,56 @@
+<section>
+  <div data-product-detail>
+    <div class="img-card">
+      <div class="img">
+        <div class="row">
+          <div class="col-1">
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="col-1">
+            <i class="fa fa-heart"></i>
+          </div>
+        </div>
+
+        <img src="../assets/{{sanPham.img}}" />
+      </div>
+    </div>
+    <div class="product-details">
+      <h2>Louis Philippe</h2>
+      <p class="p1">{{sanPham.name}}</p>
+      <p class="p2">
+        <i class="fa fa-star"></i>4.5 | <span>2.5k reviews</span>
+      </p>
+      <p class="p3">Price</p>
+      <p class="p4">
+        <span class="p4_1">${{sanPham.price}}</span>
+        <span class="p4_2">$60.00</span>
+        <span class="p4_3">(50% OFF)</span>
+      </p>
+      <!-- <p class="p3">Quantity: {{sanPham.quantity}}</p> -->
+      <input type="text" ng-model="cart.quantity" />
+      <br />
+      <p class="p5">Available in 5 colors</p>
+      <div class="sample-colors">
+        <div>
+          <div id="circle"></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <button class="button_buy">
+        <a href="">Buy Now</a>
+      </button>
+      <button class="button_add" ng-click="addToCart($event)">
+        <a href="#gio-hang"> Add To Cart </a>
+      </button>
+    </div>
+  </div>
+</section>

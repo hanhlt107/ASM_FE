@@ -1,0 +1,52 @@
+<section class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="login-wrapper col-6">
+      <div class="login-content">
+        <a class="close"><i class="fa fa-times"></i></a>
+        <h3>Đăng nhập</h3>
+        <form name="myForm">
+          <label for="username">
+            <i class="fa fa-user"></i> Tên đăng nhập:
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Tên đăng nhập 6-12 ký tự"
+              ng-model="formDangNhap.username"
+            />
+          </label>
+          <label for="password">
+            <i class="fa fa-lock"></i> Mật khẩu:
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Mật khẩu tối thiểu 6 ký tự"
+              ng-model="formDangNhap.password"
+            />
+
+            <span id="errorPass"></span>
+          </label>
+          <button
+            type="submit"
+            class="btn btn-primary btn-sm"
+            ng-click="submitFormDangNhap($event)"
+          >
+            Đăng nhập
+          </button>
+          <button type="button" class="btn btn-primary btn-sm">
+            <a href="#doi-mat-khau" id="loginSubmit">
+              Đổi mật khẩu
+              <!-- ng-click="submitDoiMatKhau($event)" -->
+              <!--  -->
+            </a>
+          </button>
+          <span class="ask4account">Chưa có tài khoản? </span>
+          <a href="#dang-ky"><b>Đăng ký ngay</b></a>
+        </form>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</section>

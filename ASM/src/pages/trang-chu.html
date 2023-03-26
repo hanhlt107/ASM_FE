@@ -1,0 +1,254 @@
+<section>
+  <div
+    id="carouselExampleInterval"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img
+          src="../assets/VPyE7Kh.jpg"
+          class="d-block w-100 anh_slide"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          src="../assets/IOSImgd.jpg"
+          class="d-block w-100 anh_slide"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../assets/teyyTRd.jpg"
+          class="d-block w-100 anh_slide"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleInterval"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleInterval"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-xl-4">
+        <div
+          class="introItem introItem1"
+          style="background-image: url(../assets/172s5JU.jpg)"
+        >
+          <h2 class="introTitle">
+            quà tặng
+            <br />
+            hàng tuần
+          </h2>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-xl-4">
+        <div
+          class="introItem introItem2"
+          style="background-image: url(../assets/2rTaHGg.jpg)"
+        >
+          <h2 class="introTitle">
+            chương trình
+            <br />
+            khuyến mãi
+          </h2>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-xl-4">
+        <div
+          class="introItem introItem3"
+          style="background-image: url(../assets/WbvZVPQ.jpg)"
+        >
+          <h2 class="introTitle">
+            thông tin
+            <br />
+            về chúng tôi
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3 class="mainTitle">
+    <span>sản phẩm bán chạy nhất</span>
+  </h3>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-sm-6 col-lg-3 mm"
+        ng-repeat="sp in listProduct | limitTo:8"
+      >
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#" class="image" style="background-color: #f3f3f3">
+              <img class="pic-1" src="../assets/{{sp.img}}" id="anhProduct" />
+            </a>
+            <a class="add-to-cart" href=""> + </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">{{sp.name}}</a></h3>
+
+            <div class="price">${{sp.price}}</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star disable"></li>
+            </ul>
+          </div>
+
+          <div class="action-buttons">
+            <a class="btn-outline">ADD TO CART</a>
+            <a class="btn-outline-icon"><i class="fa fa-heart"></i></a>
+            <a
+              href="#product/detail/{{sp.id}}"
+              class="btn-outline-icon"
+              title="detail"
+              ><i class="fa fa-eye fa-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showMore">
+  <a href="">xem thêm</a>
+</section>
+
+<section>
+  <h3 class="mainTitle">
+    <span>sản phẩm mới</span>
+  </h3>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-sm-6 col-lg-3 mm"
+        ng-repeat="sp in listProduct | limitTo:8:8"
+      >
+        <div class="product-grid">
+          <div class="product-image">
+            <a href="#" class="image" style="background-color: #f3f3f3">
+              <img class="pic-1" src="../assets/{{sp.img}}" id="anhProduct" />
+            </a>
+            <a class="add-to-cart" href=""> + </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">{{sp.name}}</a></h3>
+
+            <div class="price">${{sp.price}}</div>
+            <ul class="rating">
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star"></li>
+              <li class="fa fa-star disable"></li>
+            </ul>
+          </div>
+
+          <div class="action-buttons">
+            <a class="btn-outline">ADD TO CART</a>
+            <a class="btn-outline-icon"><i class="fa fa-heart"></i></a>
+            <a
+              href="#product/detail/{{sp.id}}"
+              class="btn-outline-icon"
+              title="detail"
+              ><i class="fa fa-eye fa-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showMore">
+  <a href="">xem thêm</a>
+</section>
+
+<section id="intro2">
+  <div class="container">
+    <div class="intro2-item">
+      <div class="intro2-image">
+        <img src="../assets/star-inside-circle.png" alt="" class="introAnh" />
+        <h4>Miễn phí vận chuyển</h4>
+        <span></span>
+        <p>
+          Miễn phí vận chuyển mọi đơn hàng trong nội thành Hà Nội, ở những nơi
+          khác thuộc Việt Nam sẽ được miễn phí vận chuyển với đơn hàng có giá
+          trị 2.000.000 VNĐ trở lên!
+        </p>
+      </div>
+    </div>
+
+    <div class="intro2-item">
+      <div class="intro2-image">
+        <img src="../assets/love.png" alt="" class="introAnh" />
+        <h4>dịch vụ tuyệt vời</h4>
+        <span></span>
+        <p>
+          Nhận hàng sau khi đặt hàng 0 - 2 ngày. Khuyến mãi hàng tuần. Chăm sóc
+          khách hàng miễn phí 24/7. Giao hàng trên toàn quốc!
+        </p>
+      </div>
+    </div>
+
+    <div class="intro2-item">
+      <div class="intro2-image">
+        <img src="../assets/phone-call.png" alt="" class="introAnh" />
+        <h4>không phí hải quan & phụ phí</h4>
+        <span></span>
+        <p>
+          Chúng tôi trả những phí này và bạn không cần phải làm điều đó. Tổng
+          tiền khi bạn thanh toán tại trang web chính là số tiền cuối cùng bạn
+          phải trả, không thêm một đồng nào khi nhận hàng.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

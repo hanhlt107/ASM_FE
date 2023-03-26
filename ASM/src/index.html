@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="asm">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASM</title>
+    <link rel="stylesheet" href="../css/plugin/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header ng-include="'./layout/header.html'"></header>
+    <section ng-view></section>
+    <footer ng-include="'./layout/footer.html'"></footer>
+
+    <script src="../js/plugin/bootstrap.bundle.js"></script>
+    <script src="../js/plugin/bootstrap.js"></script>
+    <script src="../js/plugin/jquery.min.js"></script>
+    <script src="../js/plugin/popper.js"></script>
+    <script src="../js/custom/index.js"></script>
+    <script src="../lib/angular.js"></script>
+    <script src="../lib/angular-route.js"></script>
+    <script src="./config/api.js"></script>
+    <script src="./controller/product/product-controller.js"></script>
+    <script src="./controller/user/user-controller.js"></script>
+    <script src="./controller/user/dang-ky-user-controller.js"></script>
+    <script src="./controller/user/doi-mat-khau-controller.js"></script>
+    <script src="./controller/category/category-controller.js"></script>
+    <script src="./controller/orderDetail/order-detail-controller.js"></script>
+    <script src="./route.js"></script>
+  </body>
+</html>

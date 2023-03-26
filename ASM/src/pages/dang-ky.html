@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="login-wrapper col-6">
+      <div class="login-content">
+        <a class="close"><i class="fa fa-times"></i></a>
+        <h3>Đăng ký</h3>
+        <form name="myForm">
+          <label for="username">
+            <i class="fa fa-user"></i> Tên đăng nhập:
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Tên đăng nhập 6-12 ký tự"
+              ng-model="formDangKy.username"
+            />
+          </label>
+          <label for="password">
+            <i class="fa fa-lock"></i> Mật khẩu:
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Mật khẩu tối thiểu 6 ký tự"
+              ng-model="formDangKy.password"
+            />
+          </label>
+          <label for="sdt">
+            <i class="fa fa-phone"></i> Số điện thoại:
+            <input
+              type="text"
+              name="sdt"
+              placeholder="Số điện thoại 10-11 kí tự"
+              ng-model="formDangKy.phoneNumber"
+            />
+          </label>
+          <label for="sdt">
+            <i class="fa fa-address-card"></i> Địa chỉ:
+            <input
+              type="text"
+              name="dc"
+              placeholder="Địa chỉ"
+              ng-model="formDangKy.address"
+            />
+          </label>
+          <button
+            type="submit"
+            class="btn btn-primary btn-sm"
+            ng-click="submitFormDangKy($event);"
+          >
+            <a href="#dang-ky" id="loginSubmit"> Đăng ký</a>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

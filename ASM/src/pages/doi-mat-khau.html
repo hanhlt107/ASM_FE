@@ -1,0 +1,59 @@
+<section class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="login-wrapper col-6">
+      <div class="login-content">
+        <a class="close"><i class="fa fa-times"></i></a>
+        <h3>Đổi mật khẩu</h3>
+        <form name="myForm">
+          <label for="username">
+            <i class="fa fa-user"></i> Tên đăng nhập:
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Tên đăng nhập 6-12 ký tự"
+              ng-model="formDoiMatKhau.username"
+            />
+          </label>
+          <label for="password">
+            <i class="fa fa-lock"></i> Mật khẩu cũ:
+            <input
+              type="password"
+              name="passCu"
+              id="password"
+              placeholder="Mật khẩu tối thiểu 6 ký tự"
+              ng-model="formDoiMatKhau.password"
+            />
+          </label>
+          <label for="password">
+            <i class="fa fa-lock"></i> Mật khẩu mới:
+            <input
+              type="password"
+              id="password"
+              placeholder="Mật khẩu tối thiểu 6 ký tự"
+              ng-model="formDoiMatKhau.newPassword"
+            />
+          </label>
+          <label for="password">
+            <i class="fa fa-lock"></i> Nhập lại mật khẩu mới:
+            <input
+              type="password"
+              id="password"
+              placeholder="Mật khẩu tối thiểu 6 ký tự"
+              ng-model="formDoiMatKhau.confirmPassword"
+            />
+          </label>
+          <button
+            type="button"
+            class="btn btn-primary btn-sm"
+            ng-click="submitFormDoiMatKhau($event)"
+          >
+            Đổi mật khẩu
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</section>

@@ -1,0 +1,202 @@
+<div class="cantainer">
+  <div class="row">
+    <div class="left-container col-3">
+      <div class="menu-box block">
+        <!-- MENU BOX (LEFT-CONTAINER) -->
+        <h2 class="titular">ADMIN</h2>
+        <ul class="menu-box-menu">
+          <li>
+            <a class="menu-box-tab" href="#product-manage"
+              >Quản lý product
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href="#category-manage"
+              >Quản lý category
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-container col-9">
+      <h2 class="text-center">Quản lý product</h2>
+      <br />
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form name="myForm">
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="formPoduct.name"
+                  name="ten"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Price</label>
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="formPoduct.price"
+                  name="gia"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Quantity</label>
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="formPoduct.quantity"
+                  name="so"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Category</label>
+              <div class="col-sm-7">
+                <!-- <select
+                  class="form-select"
+                  name="{{a.id}}"
+                  ng-model="formPoduct.categoryId"
+                  value="{{a.id}}"
+                >
+                  <option ng-repeat="a in listCategory">{{a.name}}</option>
+                </select> -->
+
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="{{a.id}}"
+                  value="{{a.name}}"
+                  ng-model="formPoduct.categoryId"
+                  ng-options="a.id as a.name for a in listCategory"
+                ></select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Image</label>
+              <div class="col-sm-7">
+                <input
+                  class="form-control"
+                  type="text"
+                  ng-model="formPoduct.img"
+                  value="formPoduct.img"
+                />
+                <!-- <input
+                  type="file"
+                  fileinput="file"
+                  filepreview="formPoduct.img"
+                  ng-model="formPoduct.img"
+                  value="formPoduct.img"
+                /> -->
+
+                <!-- <img
+                  ng-src="{{filepreview}}"
+                  class="img-responsive"
+                  ng-show="formPoduct.img"
+                /> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <button class="btn btn-info" ng-click="add($event);">
+                  ADD
+                </button>
+              </div>
+              <div class="col-6 mb-3">
+                <button class="btn btn-info" ng-click="update($event);">
+                  UPDATE
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-3"></div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">ID</th>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Function</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr ng-repeat="x in listProduct">
+            <th>{{$index}}</th>
+            <td>{{x.id}}</td>
+            <td>
+              <img src="../assets/{{x.img}}" class="anh_product_manage" />
+            </td>
+            <td>{{x.name}}</td>
+            <!-- <td>{{listCategory[x.categoryId].name}}</td> -->
+            <td>{{x.categoryId}}</td>
+            <td>${{x.price}}</td>
+            <td>{{x.quantity}}</td>
+            <td>
+              <button class="btn btn-sm" title="detail">
+                <a
+                  href="#product-manage/detail/{{x.id}}"
+                  ng-click="detail($event, $index)"
+                >
+                  <i class="fa fa-eye fa-lg"></i>
+                </a>
+              </button>
+
+              <button class="btn btn-sm" title="delete">
+                <a
+                  href="#product-manage/delete/{{x.id}}"
+                  ng-click="delete($event, $index)"
+                >
+                  <i class="fa fa-trash fa-lg"></i>
+                </a>
+              </button>
+              <button class="btn btn-simple btn-info btn-icon like">
+                <i class="ti-heart"></i>
+              </button>
+              <button class="btn btn-simple btn-warning btn-icon edit">
+                <i class="ti-pencil-alt"></i>
+              </button>
+              <button class="btn btn-simple btn-danger btn-icon remove">
+                <i class="ti-close"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

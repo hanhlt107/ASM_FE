@@ -1,0 +1,108 @@
+<div class="cantainer">
+  <div class="row">
+    <div class="left-container col-2">
+      <div class="menu-box1 block">
+        <!-- MENU BOX (LEFT-CONTAINER) -->
+        <h2 class="titular">Trạng thái</h2>
+        <ul class="menu-box-menu">
+          <li>
+            <a class="menu-box-tab" href=""
+              >Tất cả
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href=""
+              >Chờ thanh toán
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href=""
+              >Vận chuyển
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href=""
+              >Đang giao
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href=""
+              >Hoàn thành
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href=""
+              >Đã hủy
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href=""
+              >Trả hàng
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-10">
+      <h2 class="text-center">All Product</h2>
+      <div class="row">
+        <div
+          class="col-sm-6 col-lg-3 mm"
+          ng-repeat="sp in listProduct | limitTo:12"
+        >
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image" style="background-color: #f3f3f3">
+                <img class="pic-1" src="../assets/{{sp.img}}" id="anhProduct" />
+              </a>
+              <a class="add-to-cart" href=""> + </a>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">{{sp.name}}</a></h3>
+              <p class="text-center text-muted">Đã mua 1 lần</p>
+              <div class="price">${{sp.price}}</div>
+              <ul class="rating">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star disable"></li>
+              </ul>
+            </div>
+
+            <div class="action-buttons">
+              <a class="btn-outline">ADD TO CART</a>
+              <a class="btn-outline-icon"><i class="fa fa-heart"></i></a>
+              <a
+                href="#product/detail/{{sp.id}}"
+                class="btn-outline-icon"
+                title="detail"
+                ><i class="fa fa-eye fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

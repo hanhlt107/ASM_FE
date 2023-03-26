@@ -1,0 +1,110 @@
+<div class="cantainer">
+  <div class="row">
+    <div class="left-container col-3">
+      <div class="menu-box block">
+        <!-- MENU BOX (LEFT-CONTAINER) -->
+        <h2 class="titular">ADMIN</h2>
+        <ul class="menu-box-menu">
+          <li>
+            <a class="menu-box-tab" href="#product-manage"
+              >Quản lý product
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+          <li>
+            <a class="menu-box-tab" href="#category-manage"
+              >Quản lý category
+              <div class="menu-box-number">></div></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-container col-9">
+      <h2 class="text-center">Quản lý category</h2>
+      <br />
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form name="myForm" method="post">
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="formCategory.name"
+                  name="ten"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <button class="btn btn-info" ng-click="add($event);">
+                  ADD
+                </button>
+              </div>
+              <div class="col-6 mb-3">
+                <button class="btn btn-info" ng-click="update($event);">
+                  UPDATE
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-3"></div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Function</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr ng-repeat="x in listCategory">
+            <th>{{$index}}</th>
+            <td>{{x.id}}</td>
+            <td>{{x.name}}</td>
+            <td>
+              <button class="btn btn-sm" title="detail">
+                <a
+                  href="#category/detail/{{x.id}}"
+                  ng-click="detail($event, $index)"
+                >
+                  <i class="fa fa-eye fa-lg"></i>
+                </a>
+              </button>
+
+              <button class="btn btn-sm" title="delete">
+                <a
+                  href="#category/delete/{{x.id}}"
+                  ng-click="delete($event, $index)"
+                >
+                  <i class="fa fa-trash fa-lg"></i>
+                </a>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
